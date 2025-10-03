@@ -1,0 +1,18 @@
+CLASS zcl_02_test2_mb DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    INTERFACES zif_02_test_mb.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+CLASS zcl_02_test2_mb IMPLEMENTATION.
+
+  METHOD zif_02_test_mb~set_name.
+    me->zif_02_test_mb~name = iv_name.
+  ENDMETHOD.
+
+ENDCLASS.
