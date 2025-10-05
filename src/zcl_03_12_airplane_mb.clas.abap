@@ -1,0 +1,12 @@
+CLASS zcl_03_12_airplane_mb DEFINITION ABSTRACT "Clase abstracta
+  PUBLIC
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    METHODS airplane_type ABSTRACT RETURNING VALUE(rv_airplane_type) TYPE string . "Método abstracto
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+CLASS zcl_03_12_airplane_mb IMPLEMENTATION.
+ENDCLASS.

@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_HEREDERA_DE_AMIGA_MB</CLSNAME>
+    <CLSNAME>ZCL_03_12_CARGO_PLANE_MB</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>Heredera de la amiga</DESCRIPT>
+    <DESCRIPT>1.2. Polimorfismo con clases</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>
