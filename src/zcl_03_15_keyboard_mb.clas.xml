@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_EXECUTE_MB</CLSNAME>
+    <CLSNAME>ZCL_03_15_KEYBOARD_MB</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>Clase de ejecución</DESCRIPT>
+    <DESCRIPT>1.5. Composición</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>

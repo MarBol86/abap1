@@ -1,4 +1,4 @@
-CLASS zcl_execute_mb DEFINITION
+CLASS zcl_02_execute_mb DEFINITION
   PUBLIC
   CREATE PUBLIC .
 
@@ -9,7 +9,7 @@ CLASS zcl_execute_mb DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_execute_mb IMPLEMENTATION.
+CLASS zcl_02_execute_mb IMPLEMENTATION.
 
   METHOD if_oo_adt_classrun~main.
 
