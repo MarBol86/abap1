@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_02_TEST_MB</CLSNAME>
+    <CLSNAME>ZCL_03_28_SMTP_MB</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>Test</DESCRIPT>
+    <DESCRIPT>2.8. Eventos estáticos</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>

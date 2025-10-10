@@ -2,7 +2,7 @@ CLASS zcl_02_storage_location_mb DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC
-* Establecemos cuáles son sus clases amigas | Nota: para locales Sólo FRIENDS
+* Establecemos cuáles son sus clases amigas | Nota: para clases locales Sólo FRIENDS
   GLOBAL FRIENDS zcl_02_plant_mb. "Le ofrece acceso a los miembros de la encapsulación PRIVADA
 
   PUBLIC SECTION.
@@ -16,5 +16,4 @@ CLASS zcl_02_storage_location_mb IMPLEMENTATION.
   METHOD set_product.
     me->product = iv_product.
   ENDMETHOD.
-
 ENDCLASS.

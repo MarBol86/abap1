@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_02_TEST_MB</CLSNAME>
+    <CLSNAME>ZCL_03_29_BUILDING_MB</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>Test</DESCRIPT>
+    <DESCRIPT>2.9. Manejar eventos para todas las instancias de la clase</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>

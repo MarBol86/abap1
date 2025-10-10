@@ -1,14 +1,14 @@
-class ZCL_02_TEST_MB definition
-  public
-  final
-  create public .
+CLASS zcl_02_test_mb DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
 
-public section.
-protected section.
-private section.
+  PUBLIC SECTION.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
 
-CLASS ZCL_02_TEST_MB IMPLEMENTATION.
+CLASS zcl_02_test_mb IMPLEMENTATION.
 ENDCLASS.

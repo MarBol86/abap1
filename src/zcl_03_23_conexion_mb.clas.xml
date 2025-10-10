@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_02_TEST_MB</CLSNAME>
+    <CLSNAME>ZCL_03_23_CONEXION_MB</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>Test</DESCRIPT>
+    <DESCRIPT>2.3. Establecer clase receptora</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>

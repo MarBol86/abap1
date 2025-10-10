@@ -1,9 +1,7 @@
 CLASS zcl_02_animal_mb DEFINITION
   PUBLIC
   CREATE PUBLIC .
-
   PUBLIC SECTION.
-
     METHODS walk RETURNING VALUE(rv_walk) TYPE string.
   PROTECTED SECTION.
   PRIVATE SECTION.
@@ -13,5 +11,4 @@ CLASS zcl_02_animal_mb IMPLEMENTATION.
   METHOD walk.
     rv_walk = 'The animal walks'.
   ENDMETHOD.
-
 ENDCLASS.
