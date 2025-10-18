@@ -12,34 +12,23 @@ ENDCLASS.
 CLASS zcl_00_execute_mb IMPLEMENTATION.
 
   METHOD if_oo_adt_classrun~main.
-* Hacemos 3 bloques try
-    DATA(lo_execution) = NEW zcl_54_execute_mb(  ).
+* Lo que el usuario ingresaría por pantalla
+    DATA: lv_name TYPE string VALUE 'John Smith',
+          lv_role TYPE string VALUE 'Developer'.
+* El modelo tiene el rol de pasar los datos a la vista y de recuperarlos
+* El modelo puede recibir los datos de la vista para hacer actualizaciones a la BD u obtenerlos de la BD
+    DATA(lo_model) = NEW zcl_70_emp_model_mb( iv_name = lv_name iv_role = lv_role ). "Simulamos los datos desde la capa de persistencia
+    DATA(lo_view) = NEW zcl_71_emp_view_mb( ).
+    DATA(lo_controller) = NEW zcl_72_emp_controller_mb( ).
 
-    TRY.
-        TRY.
-            TRY.
-                lo_execution->raise_exception_1( ).
+*EJECUCIÓN: Todo se maneja a través del CONTROLADOR
+    lo_controller->set_model( io_model = lo_model ).
+    lo_controller->set_view( io_view = lo_view ).
 
-              CATCH zcx_51_exception1_mb INTO DATA(lx_1).
-                lo_execution->raise_exception_2( lx_1 ).
-            ENDTRY.
-
-          CATCH zcx_52_exception2_mb INTO DATA(lx_2).
-            lo_execution->raise_exception_3( lx_2 ).
-        ENDTRY.
-
-      CATCH zcx_53_exception3_mb INTO DATA(lx_3).
-        "Texto de la capa 3
-        out->write( |{ lx_3->get_text(  ) } { cl_abap_char_utilities=>newline } | ).
-        "Texto de la capa 2 con PREVIOUS
-        out->write( |{ lx_3->previous->get_text(  ) } { cl_abap_char_utilities=>newline } | ).
-        "Texto de la capa 1 con PREVIOUS PREVIOUS
-        out->write( |{ lx_3->previous->previous->get_text(  ) } { cl_abap_char_utilities=>newline } | ).
-        "Es de buena práctica asegurarnos que objeto esté instanciado
-        IF lx_3->previous->previous IS BOUND.
-        ENDIF.
-
-    ENDTRY.
+    lo_controller->get_view( )->display_employee(
+      iv_name = lo_model->get_name( ) "El mismo CONTROLADOR va a consultar con el MODELO
+      iv_role = lo_model->get_role( )
+      io_out  = out ).
 
   ENDMETHOD.
 ENDCLASS.
