@@ -35,10 +35,11 @@ CLASS ltcl_business_process IMPLEMENTATION.
     IF cl_abap_unit_assert=>assert_equals(
           EXPORTING
             act                  = lv_factorial_ut
-            exp                  = 24 ) EQ abap_true. "Es un método funcional que devuelve abap_true si tiene algún fallo.
+            exp                  = 23 ) EQ abap_true. "Es un método funcional que devuelve abap_true si tiene algún fallo.
 
       cl_abap_unit_assert=>fail( 'Factorial Proccess failed.' ). "Esta linea de ejecuta sólo si hay un fallo
     ENDIF.
+    cl_abap_unit_assert=>fail( 'Factorial Proccess failed.' ). "Esta linea de ejecuta sólo si hay un fallo
   ENDMETHOD.
 
   METHOD teardown.
